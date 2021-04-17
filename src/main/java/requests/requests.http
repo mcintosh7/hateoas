@@ -1,0 +1,35 @@
+###
+GET localhost:8080/car HTTP/1.1
+
+###
+GET localhost:8080/car/2 HTTP/1.1
+
+###
+POST http://localhost:8080/car
+Content-Type: application/json
+
+{
+  "mark": "BMW",
+  "model": "16",
+  "year": "2021",
+  "type": "cabriolet",
+  "price": "33000.00"
+}
+
+###
+PUT http://localhost:8080/car/4
+Content-Type: application/json
+
+{
+  "mark": "BMW",
+  "model": "316",
+  "year": "2019",
+  "type": "van",
+  "price": "133000.00"
+}
+
+###
+DELETE http://localhost:8080/car/4
+
+
+
